@@ -42,7 +42,7 @@ CREATE TABLE cliente_endereco (
 	estado VARCHAR(25) NOT NULL,
     cidade VARCHAR(25) NOT NULL,
     bairro VARCHAR(25) NOT NULL,
-    rua VARCHAR(25) NOT NULL,
+    rua VARCHAR(30) NOT NULL,
     numero INT CHECK (numero > 0),
     cep VARCHAR(9) NOT NULL,
     CONSTRAINT fk_cliente_cliente_endereco FOREIGN KEY (cpf_cliente) REFERENCES cliente(cpf_cliente) ON DELETE CASCADE
